@@ -4,7 +4,7 @@ A **web-based trading interface** built with **Streamlit** and **Python**, desig
 
 This tool enables traders to execute trades, monitor positions, and manage their MT5 account through an intuitive web interface with real-time updates and intelligent filtering.
 
-I developed it in order to let other people understand better how to create a proper dashboard and, obviouly, how to use the MQL5 API to see account informations and trade.
+I developed it to help others understand how to create a proper trading dashboard and, obviously, how to use the MT5 Python API to access account information and execute trades.
 
 ## 🌐 Deployment Note
 
@@ -192,10 +192,10 @@ For 24/7 availability, deploy on a Windows VPS:
    - Enter your MT5 account number
    - Input password (securely masked)
    - Specify broker server name
-   - Click "🔌 Connetti a MT4"
+   - Click "🔌 Connect to MT5"
 
 3. **Verify connection**:
-   - Check for green "🟢 Connesso" indicator
+   - Check for green "🟢 Connected" indicator
    - Review displayed balance and equity
 
 ---
@@ -220,19 +220,19 @@ For 24/7 availability, deploy on a Windows VPS:
 - Unchecked filter displays complete portfolio
 
 #### Filter Specific Trades
-1. Enable "Mostra solo posizioni con commento specifico"
+1. Enable "Show only positions with specific comment"
 2. Enter comment to filter (e.g., "Streamlit Trade")
 3. View only matching positions
 
 #### Close Individual Position
 1. Expand position details
 2. Review profit/loss
-3. Click "❌ Chiudi Posizione #[ticket]"
+3. Click "❌ Close Position #[ticket]"
 4. Confirm closure
 
 #### Close Multiple Positions
 1. Filter desired positions
-2. Click "⚠️ CHIUDI TUTTE LE [N] POSIZIONI"
+2. Click "⚠️ CLOSE ALL [N] POSITIONS"
 3. Wait for bulk closure completion
 4. Review success/failure counts
 
@@ -241,7 +241,7 @@ For 24/7 availability, deploy on a Windows VPS:
 ### Auto-Refresh Configuration
 
 **Enable Auto-Refresh:**
-1. Check "🔄 Aggiornamento Automatico"
+1. Check "🔄 Auto Refresh"
 2. Select refresh interval (1-30 seconds)
 3. Monitor real-time updates
 
@@ -334,18 +334,18 @@ This tool is perfect for:
 
 ### Connection Issues
 
-**Problem**: "❌ Inizializzazione MT5 fallita"
+**Problem**: "❌ MT5 initialization failed"
 - **Solution**: Ensure MT5 terminal is running and logged in
 - Check that Python and MT5 are same architecture (both 32-bit or 64-bit)
 
-**Problem**: "❌ Login fallito"
+**Problem**: "❌ Login failed"
 - **Solution**: Verify account number, password, and server name
 - Check MT5 terminal can connect to broker server
 - Confirm account allows API connections (check broker settings)
 
 ### Order Execution Errors
 
-**Problem**: "❌ Simbolo [SYMBOL] non trovato"
+**Problem**: "❌ Symbol [SYMBOL] not found"
 - **Solution**: Check symbol name spelling (e.g., EURUSD not EUR/USD)
 - Ensure symbol is available in MT5 Market Watch
 - Right-click Market Watch → Show All to enable symbol
@@ -525,6 +525,6 @@ pip install --upgrade -r requirements.txt
 
 ---
 
-**Happy Trading! 📈💹**
+**Have some nice trading sessions! 📈💹**
 
 Remember: Successful trading requires discipline, risk management, and continuous learning. This tool is just one part of your trading toolkit.
